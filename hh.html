@@ -1,158 +1,259 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    table, th, td {
-  border: 1px solid black;
-
-
-}
-
-@media screen and (max-width:940px) {
-    body{
-    background-color: blue;
-
-}}
-
-@media screen and (max-width:840px) {
-    body{
-    background-color: green;
-
-}}
-
-
-@media screen and (max-width:740px) {
-    body{
-    background-color: orange;
-
-}}
-
-
-
-
-
-
-@media screen and (max-width:640px) {
-    body{
-    background-color: lightblue;
-
-}
-table{
-    display:flex;
-    text-align: center;
-    /* align-items: center; */
-    justify-content: center;
-      border: 1px solid black;
-      
-
-}
-    
-}</style>
-</head>
-<body>
-
-<table  style="text-align: center;">
-
-    <tr>
-        <th rowspan="3">Day</th>
-        <th colspan="3" >Seminar</th>
-    </tr>
-
-    <tr>
-        <th colspan="2" >Schedule</th>
-        <th rowspan="2" >Topic</th>
-    </tr>
-
-    <tr>
-        <th>Begin</th>
-        <th>End</th>
-    </tr>
-
-    <tr>
-        <td rowspan="2">Monday</td>
-        <td style="background-color: #fff2cc;" rowspan="2">8:00am.</td>
-        <td style="background-color: #97bcda;" rowspan="2">5:00p.m.</td>
-        <td >Introdction to xml</td>
-    </tr>
-
-    <tr>
-        <!-- <td style="background-color: #fff2cc;">8:00a.m.</td>
-        <td style="background-color: #d5f5e3;">11:00a.m.</td> -->
-        <td >Validity:DTD and Relax NG</td>
-    </tr>
-
-    <tr>
-        <td rowspan="3">Tuesday</td>
-        <td style="background-color: #fff2cc;">8:00a.m.</td>
-        <td style="background-color: #d5f5e3;">11:00a.m.</td>
-        <td rowspan="3">XPath<br><br>XSL Transformations</td>
-    </tr>
-
-    <tr>
-        <td style="background-color: #fff2cc;">11:00a.m.</td>
-        <td style="background-color: #d5f5e3;">2:00p.m.</td>
-    </tr>
-
-        <tr>
-        <td style="background-color: #fff2cc;">2:00p.m.</td>
-        <td style="background-color:  #97bcda;">5:00p.m.</td>
-    </tr>
-
-    <tr>
-        <td>Wednesday</td>
-        <td style="background-color: #fff2cc;">8:00a.m.</td>
-        <td style="background-color: #d5f5e3;">12:00p.m.</td>
-        <td >XSL Formatting Objects</td>
-    </tr>
-
-</table>
-
-</body>
-</html>
-
-
-
-<html>
-
-<head>
-
-<meta names" content="width=device-width, initial-scale=1">
-
-<title> bs grid </title>
-
-<link href="https://cdn.jsdelivr.net/npw/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="styl I
-
+        @media screen and (max-width:600px) {}
+    </style>
 </head>
 
-<body>
 
-9
+<body class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 col-xl-8  ">
+                <h3 class="text-center">Create your character</h3>
+                <!-- ghjdhgkjfhkghfdjkgdf -->
+                <form class="af" action="" method="GET">
+                    <div class="row   border mb-3 rounded-3 bg-light">
+                        <div class="col-12 col-md-6 bg-light">
+                            <div class="mb-3">
+                                <label for="vip" class="form-label mb-1">Character name</label><br>
+                                <input type="text   " placeholder="Vards" name="VardsInput" required
+                                    class="form-control" id="vip">
+                                <small><code>type text</code></small>
+                            </div>
 
-10
 
-11
 
-12
+                            <div class="mb-3">
+                                <label for="pip" class="form-label mb-1">Password</label><br>
+                                <input type="password" placeholder="Password" id="pip" name="PInput" required
+                                    class="form-control">
+                                <small><code>type password</code></small>
+                            </div>
 
-13
+                            <!-- <div class="margin-bottom-20">
+                            <b>Password</b><br>
+                            <input type="password" placeholder="Password" name="PInput" required class="padding-5"
+                                id="pwd">
+                            <br><code>type text</code>
+                            <br>
 
-14
+                        </div> -->
 
-15
 
-<div class="container bg-warning" style="height: 900px">
 
-<div class="row" style="height: 300px">
 
-<div class="col-12 col-md-3 col-lg-7 bg-success"></div>
+                            <div class="mb-3">
+                                <label for="aip" class="form-label mb-1">Age</label><br>
+                                <input type="number" id="aip" placeholder="Age" name="age" min="0" max="100" value="18"
+                                    required class="form-control">
+                                <small><code>type number</code></small>
+                            </div>
 
-<div class="col-12 col-md-9 col-lg-5 bg-info"></div>
+                            <!-- <div class="margin-bottom-20">
+                            <b>Age</b><br>
+                            <input type="number" placeholder="Age" name="age" min="0" max="100" required
+                                class="padding-5" id="age">
+                            <br><code>type text</code>
+                            <br> -->
 
-</div>
 
-</div>
+                            <div class="mb-3">
+                                <label for="dip" class="form-label mb-1">Dzimsanas Datums</label><br>
+                                <input type="date" id="dip" placeholder="Dz.Datums" name="dzdatums" min="1900-01-01"
+                                    max="2026-12-12" required class="form-control">
+                                <small><code>type date</code></small>
+                            </div>
+
+                            <!-- <div class="margin-bottom-20">
+                            <b>Dz. Datums</b><br>
+                            <input type="date" placeholder="Dz.Datums" name="dzdatums" min="1900-01-01" max="2026-12-12"
+                                required class="padding-5" id="dzdatums">
+                            <br><code>type text</code>
+                            <br>
+                        </div> -->
+
+
+                            <div class="mb-3">
+                                <label for="cip" class="form-label mb-1">Milaka Krasa</label><br>
+                                <input type="color" placeholder="color" name="color" id="cip" required
+                                    class="form-control form-control-color">
+                                <small><code>type color</code></small>
+                            </div>
+
+
+                            <!-- <div class="margin-bottom-20">
+                            <b>FavorCol</b><br>
+                            <input type="color" placeholder="color" name="color" required class="padding-5">
+                            <br><code>type text</code>
+                            <br>
+                        </div> -->
+
+
+                            <div class="my-3 mr-1 ml-1">
+                                <label class="form-label mb-1">Radio buttons</label><br>
+                                opt1
+                                <input type="radio" name="same-name" value="1" required class="form-check-input"><br>
+                                opt2
+                                <input type="radio" name="same-name" value="2" required class="form-check-input"><br>
+                                opt3
+                                <input type="radio" name="same-name" value="3" required
+                                    class="form-check-input"><br><small><code>type radio</code></small>
+                                <br>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-6 bg-light">
+                            <div class="input-group mb-3">
+                                <div class="margin-bottom-20">
+                                    <label class="form-label mb-1">Check boxes</label><br>
+
+                                    <small><label for="opp1" class="form-label mb-1">opt1</label></small>
+                                    <input type="checkbox" name="same-name1" value="1" class="form-check-input mt-0"
+                                        id="opp1"><br>
+                                    <small><label for="opp2" class="form-label mb-1">opt2</label></small>
+                                    <input type="checkbox" name="same-name2" value="2" class="form-check-input mt-0"
+                                        id="opp2"><br>
+                                    <small><label for="opp3" class="form-label mb-1">opt3</label></small>
+
+                                    <input type="checkbox" name="same-name3" value="3" class="form-check-input mt-0"
+                                        id="opp3"><br><code>type text</code>
+                                    <br>
+                                </div>
+                            </div>
+
+
+
+                            <div class="mb-3">
+                                <label for="avaid" class="form-label">Upload avatar</label><br>
+                                <!-- <b>Upload avatar</b><br> -->
+                                <input type="file" accept="image/png, image/jpg" name="nf" id="avaid"
+                                    class="form-control" required>
+                                <small><code>type file</code></small>
+                                <br>
+                            </div>
+
+
+
+
+                            <div class="mb-3">
+                                <label for="eip" class="form-label mb-1">Email</label><br>
+                                <input type="email" placeholder="Email" id="eip" name="EmailNeim" required
+                                    class="form-control">
+                                <small><code>type Email</code></small>
+                            </div>
+
+                            <!-- <div class="margin-bottom-20">
+                            <b>email</b><br>
+                            <input type="email" name="ne" required>
+                            <br><code>type text</code>
+                            <br>
+                        </div> -->
+
+                            <div class="mb-3">
+                                <label for="telip" class="form-label mb-1">Phone</label><br>
+                                <input type="tel" placeholder="+371" id="telip" name="tl" required class="form-control">
+                                <small><code>type phone</code></small>
+                            </div>
+
+                            <!-- <div class="margin-bottom-20">
+                            <b>phone</b><br>
+                            <input type="tel" value="+371" name="tl" required>
+                            <br><code>type text</code>
+                            <br>
+                        </div> -->
+
+
+
+
+                            <div class="mb-3">
+                                <label for="urlip" class="form-label mb-1">Url link</label><br>
+                                <input type="url" placeholder="https://..." id="urlip" name="url" required
+                                    class="form-control">
+                                <small><code>type url</code></small>
+                            </div>
+                            <!-- 
+                        <div class="margin-bottom-20">
+                            <b>url link</b><br>
+                            <input type="url" placeholder="https://..." name="url" required>
+                            <br><code>type text</code>
+                            <br>
+                        </div> -->
+
+
+                            <div class="mb-3">
+                                <label for="seip" class="form-label mb-1">Search</label><br>
+                                <input type="search" placeholder="" id="seip" name="searchf" required
+                                    class="form-control">
+                                <small><code>type search</code></small>
+                            </div>
+
+                            <!-- <div class="margin-bottom-20">
+                            <b>search</b><br>
+                            <input type="search" placeholder="" name="ffff" required>
+                            <br><code>type text</code>
+                            <br>
+                        </div> -->
+                            <label for="selip" class="form-label mb-1">Select option</label><br>
+
+
+                            <div class="input-group mb-0">
+
+                                <select class="form-select" id="selip">
+                                    <option selected>Izvelies opciju</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <label class="input-group-text" for="selip">Opcijas</label>
+
+
+                            </div>
+
+                            <small><code>type select</code></small>
+                            <!-- <div class="margin-bottom-20"> <label for="sameWidthID"><b>Izvelies</b></label><br>
+
+
+                            <select name="select" id="sameWidthID" required class="padding-5 ttext">
+
+                                <option>Izvelies opciju</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div> -->
+
+                        </div>
+
+                                                <div class="mt-3 mb-2">
+                            <input type="reset" value="RESET" class="btn btn-danger">
+                            <input type="submit" value="Pievienot" class="btn btn-primary">
+
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+   
 
 </body>
+
+
 
 </html>
