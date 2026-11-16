@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <!-- bootsrap icons -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <!-- jquery 4.0 CDN -->
+</head>
+<boby>
+    <div class="container">
+        <div class="div row">
+            <div class="col-12 col-lg-5">
+                <div class="mb-4">
+                    <h1 class="mb-0 bi bi-card-image">Create Postcard</h1>
+                    <span class="text-muted"> Create Your Postcards</span>
+                </div>
+
+
+
+                <h5 class="fw-bold"> Customize your postcard </h5>
+                <div class=" mb-3">
+                    <label for="emem" class="form-label">Email Adress</label>
+                    <input type="email" class="form-control" id="emem">
+                    <div class="form-text">Press Enter to generate your postard</div>
+                </div>
+                <div class="mb-3">
+                    <label for="textarea" class="form-label">Greeting Message</label>
+                    <textarea rows="3" id="textarea" class="form-control" placeholder="Wish you a nice day!"></textarea>
+                </div>
+
+                <div class=" mb-3">
+                    <label for="from" class="form-label">From</label>
+                    <input type="text" class="form-control" id="from">
+                </div>
+
+                <div class="mb-3">
+                    <label for="colorTheme" class="form-label">Color theme</label>
+                    <select id="colorTheme" class="form-select">
+                        <option value="sunset">Sunset</option>
+                        <option value="ocean">Ocean</option>
+                        <option value="white-black">White-Black</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <input class="form-check-input" type="checkbox" id="showSignature" checked>
+                    <label class="form-check-label" for="showSignature">Show Signature</label>
+                </div>
+
+
+                <div class="mb-3">
+                    <input class="form-check-input" type="checkbox" id="ShowDecoration" checked>
+                    <label class="form-check-label" for="ShowDecoration">Show Decoration</label>
+                </div>
+
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" id="generateCard">Generate Card</button>
+                    <button class="btn btn-outline-dark" id="hideInstructions">Hide Instructions</button>
+                </div>
+            </div>
+
+   
+
+
+
+
+        <div class="col-12 col-lg-7 mt-5">
+            <h5>Live Preview</h5>
+            <div class="mb-3">
+                <div class="bg-warning-subtle border border-warning rounded-3 p-3"> 
+                      <h1 class="bi bi-flower1 text-end" id="decoration"> </h1>
+                      <p class="text-muted fw-bold">A SPECIAL MESSAGE FOR YOU</p>
+                      <h1 class="" id="recipentNameOutput">Dear, ... !</h1>
+
+                      <p id="g-output">Your greeting will appear here...</p>
+                       <p class="text-muted fw-bold" id="from-output" >Warm, wishes....</p>
+                </div>
+              
+            </div>
+
+            <span class="text-muted mt-2 mb-3">Hover the information...</span>
+
+            <div class="border rounded-3 p-2" id="Instructions">
+                <p class="text-muted fst-italic">
+                    Try this:
+                    Has your friend not seen the Bee Movie? Has it been a long time since they’ve seen it? Would they like to receive the and bla-bla-bla...
+                </p>
+            </div>
+            
+
+        </div>
+
+
+
+     </div>
+    </div>
+
+    <script>
+        $(function(){
+            $("#hideInstructions").on("click", function()
+            {$("#Instructions").hide();
+                
+            });
+        });
+    </script>
+
+</boby>
+
+</html>
