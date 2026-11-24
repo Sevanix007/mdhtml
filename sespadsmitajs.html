@@ -70,10 +70,10 @@
 
 
 
-        <div class="col-12 col-lg-7 mt-5">
+        <div class="col-12 col-lg-7 mt-5" >
             <h5>Live Preview</h5>
             <div class="mb-3">
-                <div class="bg-warning-subtle border border-warning rounded-3 p-3"> 
+                <div class="bg-warning-subtle border border-warning rounded-3 p-3" id="postcard"> 
                       <h1 class="bi bi-flower1 text-end" id="decoration"> </h1>
                       <p class="text-muted fw-bold">A SPECIAL MESSAGE FOR YOU</p>
                       <h1 class="" id="recipentNameOutput">Dear, ... !</h1>
@@ -107,7 +107,96 @@
             {$("#Instructions").hide();
                 
             });
+
+                    function generatePostcard() {let recName = $("#emem").val().trim();
+                    let msg_out = $("#textarea").val().trim();
+console.log(recName);
+if(recName.length > 0 ) {
+    $("#emem").removeClass("border-danger");}
+    else{$("#emem").addClass("border-danger");}
+
+
+
+    if(msg_out.length > 0 ) {
+    $("#textarea").removeClass("border-danger");}
+    else{$("#textarea").addClass("border-danger");}
+
+
+    if(msg_out.length > 0 && recName.length > 0 ){
+        $("#recipentNameOutput").text("Dear " + recName + "!");
+         $("#g-output").text(msg_out);
+        
+    }
+
+                    }
+
+                    $("#generateCard").on("click", function(){
+                        generatePostcard();
+                    })
+
+                             $("#colorTheme").on("change", function(){
+                        // generatePostcard();
+                        let theme = $(this).val();
+                        if (theme == "ocean"){
+                            $("#postcard").removeClass("bg-warning-subtle border-warning bg-secondary-subtle border-dark");
+                            $("#postcard").addClass("bg-primary-subtle border-primary");
+                        }
+                        else  if (theme == "sunset"){
+                            $("#postcard").removeClass("bg-primary-subtle border-primary bg-secondary-subtle border-dark");
+                            $("#postcard").addClass("bg-warning-subtle border-warning");
+                        }
+
+                                                else  if (theme == "white-black"){
+                            $("#postcard").removeClass("bg-warning-subtle border-warning bg-primary-subtle border-primary");
+                            $("#postcard").addClass("bg-secondary-subtle border-dark");
+                        }
+                    });
+                    $("#showSignature").on("change", function(){
+                        if($(this).is(":checked")){
+                            $("#from-output").show();
+
+                        }
+                        else { $("#from-output").hide();} 
+                    });
+
+
+                                        $("#ShowDecoration").on("change", function(){
+                        if($(this).is(":checked")){
+                            $("#decoration").show();
+
+                        }
+                        else { $("#decoration").hide();} 
+                    });
+
+
+                    $("#decoration").on("dblclick", function(){ 
+
+                        if ($(this).hasClass("bi-flower1")){
+                            $(this).removeClass("bi-flower1");
+                            $(this).addClass("bi-stars");
+
+                        }
+                        else {
+                                                       $(this).removeClass("bi-stars"); 
+                           $(this).addClass("bi-flower1");
+ 
+                        }
+                    });
+$("#postcard").on("mouseenter", function(){
+    $("#decoration").addClass("text-primary");
+});
+
+
+$("#postcard").on("mouseleave", function(){
+    $("#decoration").removeClass("text-primary");
+});
+                    // decoration
+
+
         });
+
+
+
     </script>
 
 </boby>
